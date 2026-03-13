@@ -1,0 +1,297 @@
+#matrix{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:-1;
+background:black;
+pointer-events:none;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== BODY ===== */
+
+body{
+
+background:linear-gradient(135deg,#120000,#1c0000,#0a0000);
+color:#f5f5f5;
+
+height:100vh;
+
+}
+
+/* ===== LOGIN ===== */
+
+.login{
+
+width:420px;
+
+margin:auto;
+margin-top:120px;
+
+padding:40px;
+
+background:rgba(20,0,0,0.9);
+
+border-radius:10px;
+
+box-shadow:
+0 0 20px rgba(255,0,0,0.4),
+0 0 60px rgba(255,0,0,0.2);
+
+text-align:center;
+
+}
+
+.login h2{
+
+margin-bottom:25px;
+
+font-weight:300;
+
+letter-spacing:2px;
+
+color:#ff4b4b;
+
+text-shadow:0 0 10px red;
+
+}
+
+.login input{
+
+width:100%;
+
+padding:12px;
+
+margin-bottom:15px;
+
+background:#0e0e0e;
+
+border:1px solid #3a0000;
+
+border-radius:5px;
+
+color:white;
+
+}
+
+.login button{
+
+width:100%;
+
+padding:12px;
+
+background:#b30000;
+
+border:none;
+
+border-radius:5px;
+
+color:white;
+
+font-weight:bold;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.login button:hover{
+
+background:#ff0000;
+
+box-shadow:0 0 15px red;
+
+}
+
+/* ===== TOPBAR ===== */
+
+.topbar{
+
+height:50px;
+
+display:flex;
+
+align-items:center;
+
+padding-left:20px;
+
+background:#190000;
+
+border-bottom:1px solid #3a0000;
+
+font-size:14px;
+
+letter-spacing:1px;
+
+}
+
+/* ===== WORKSPACE ===== */
+
+.workspace{
+
+display:flex;
+
+height:calc(100vh - 50px);
+
+}
+
+/* ===== EDITOR AREA ===== */
+
+.editors{
+
+width:65%;
+
+background:#0f0f0f;
+
+padding:20px;
+
+overflow:auto;
+
+border-right:1px solid #330000;
+
+}
+
+.editors h3{
+
+margin-bottom:6px;
+
+font-size:13px;
+
+color:#ff4b4b;
+
+letter-spacing:1px;
+
+}
+
+/* ===== MONACO EDITORS ===== */
+
+#htmlEditor,
+#cssEditor,
+#jsEditor{
+
+height:220px;
+
+border-radius:6px;
+
+margin-bottom:18px;
+
+overflow:hidden;
+
+border:1px solid #2a0000;
+
+box-shadow:
+0 0 10px rgba(255,0,0,0.2);
+
+}
+
+/* ===== PREVIEW AREA ===== */
+
+.previewArea{
+
+width:35%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#0a0a0a;
+
+}
+
+/* ===== PHONE SIMULATOR ===== */
+
+.phone{
+
+width:300px;
+
+height:580px;
+
+border-radius:35px;
+
+background:black;
+
+border:10px solid #111;
+
+box-shadow:
+
+0 0 30px rgba(255,0,0,0.4),
+0 0 60px rgba(255,0,0,0.2);
+
+overflow:hidden;
+
+position:relative;
+
+}
+
+/* camera notch */
+
+.phone::before{
+
+content:"";
+
+width:120px;
+height:18px;
+
+background:black;
+
+position:absolute;
+
+top:8px;
+left:50%;
+
+transform:translateX(-50%);
+
+border-radius:10px;
+
+z-index:5;
+
+}
+
+/* ===== IFRAME PREVIEW ===== */
+
+iframe{
+
+width:100%;
+height:100%;
+border:none;
+background:white;
+
+}
+
+/* ===== SCROLLBAR PREMIUM ===== */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#0c0c0c;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#5c0000;
+border-radius:4px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#ff0000;
+
+}

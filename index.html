@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Login Prova</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<canvas id="matrix"></canvas>
+
+<div class="login">
+
+<h2>PROVA MOBILE PRÁTICA (AV1)</h2>
+
+<input id="nome" placeholder="Nome">
+<input id="senha" type="password" placeholder="Senha">
+
+<button onclick="login()">Entrar</button>
+
+</div>
+
+<script src="data/alunos.js"></script>
+<script src="js/login.js"></script>
+<script src="js/security.js"></script>
+<script src="js/matrix.js"></script>
+
+<script>
+
+// BLOQUEAR COPIAR E COLAR
+document.addEventListener("copy", function(e){
+e.preventDefault();
+alert("Copiar não é permitido nesta prova.");
+});
+
+document.addEventListener("paste", function(e){
+e.preventDefault();
+alert("Colar não é permitido nesta prova.");
+});
+
+document.addEventListener("cut", function(e){
+e.preventDefault();
+});
+
+// BLOQUEAR CTRL C / CTRL V
+document.addEventListener("keydown", function(e){
+
+if(e.ctrlKey && e.key === "c"){
+e.preventDefault();
+}
+
+if(e.ctrlKey && e.key === "v"){
+e.preventDefault();
+}
+
+});
+
+// BLOQUEAR BOTÃO DIREITO
+document.addEventListener("contextmenu", function(e){
+e.preventDefault();
+});
+
+// BLOQUEAR F12
+document.addEventListener("keydown", function(e){
+if(e.key === "F12"){
+e.preventDefault();
+}
+});
+
+</script>
+</body>
+</html>

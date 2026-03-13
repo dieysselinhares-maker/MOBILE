@@ -1,0 +1,40 @@
+const alunos = [
+
+{nome:"BRUNO.ALEXANDRE", senha:"BA001"},
+{nome:"AUGUSTO.JOAQUIM", senha:"A1002"},
+{nome:"BIANCA.BORDINHON", senha:"B1003"},
+{nome:"BRUNO.HENRIQUE", senha:"B1004"},
+{nome:"DANIEL.MOLON", senha:"D1005"},
+{nome:"EDUARDO.SILVA", senha:"E1006"},
+{nome:"EDUARDO.VIEIRA", senha:"E1007"},
+{nome:"EMANUEL.MEINKE", senha:"E1008"},
+
+{nome:"FERNANDO.CORDEIRO", senha:"A1009"},
+{nome:"GUILHERME.ALBERTO", senha:"A1010"},
+{nome:"GUSTAVO.TRIQUES", senha:"A1011"},
+{nome:"HEITOR.OLIVEIRA", senha:"A1012"},
+{nome:"HERCULES.GABRIEL", senha:"A1013"},
+{nome:"HERICK.JOSE", senha:"A1014"},
+{nome:"ISAAC.EMMANUEL", senha:"A1015"},
+{nome:"ISAQUE.CRISOSTOMO", senha:"A1016"},
+{nome:"JOAO.PEDRO", senha:"A1017"},
+{nome:"JOAO.VYCTOR", senha:"A1018"},
+{nome:"JUAN.ALEX", senha:"A1019"},
+{nome:"KAUA.ASAF", senha:"A1020"},
+
+{nome:"LEANDRO.ISAUL", senha:"A1021"},
+{nome:"LUCAS.DA", senha:"A1022"},
+{nome:"LUCAS.MARTINS", senha:"A1023"},
+{nome:"LUIZ.AUGUSTO", senha:"A1024"},
+{nome:"NATAN.ALVES", senha:"A1025"},
+{nome:"NATHALLY.YASMIN", senha:"A1026"},
+{nome:"NATHILLY.NATHALIA", senha:"A1027"},
+{nome:"PEDRO.ALVES", senha:"A1028"},
+{nome:"RENNAN.ROCHA", senha:"A1029"},
+{nome:"ROGER.DA", senha:"A1030"},
+
+{nome:"RYAN.APARECIDO", senha:"A1031"},
+{nome:"VINICIUS.BOTELHO", senha:"A1032"},
+{nome:"VINICIUS.LOPES", senha:"A1033"},
+{nome:"VITOR.HUGO", senha:"A1034"}
+]

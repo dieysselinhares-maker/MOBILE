@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Editor Mobile</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.44.0/min/vs/loader.min.js"></script>
+
+</head>
+
+<body>
+<canvas id="matrix"></canvas>
+<div class="topbar">
+
+
+
+Aluno: <span id="aluno"></span>
+
+
+<button onclick="finalizarProva()" class="finalizar">
+Finalizar Prova
+</button>
+
+</div>
+
+<div class="workspace">
+
+<div class="editors">
+
+<h3>HTML</h3>
+<div id="htmlEditor"></div>
+
+<h3>CSS</h3>
+<div id="cssEditor"></div>
+
+<h3>JS</h3>
+<div id="jsEditor"></div>
+
+</div>
+
+<div class="previewArea">
+
+<div class="phone">
+
+<iframe id="preview"></iframe>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="js/editor.js"></script>
+<script src="js/preview.js"></script>
+<script src="js/security.js"></script>
+<script src="js/matrix.js"></script>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+import { getFirestore, addDoc, collection } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js";
+
+const firebaseConfig = {
+apiKey: "AIzaSyB8VMOUWCfXkIecbrJaOxjqt8QyVDYhtAc",
+authDomain: "prova-mobile-3169e.firebaseapp.com",
+projectId: "prova-mobile-3169e"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+window.db = db
+window.addDoc = addDoc
+window.collection = collection
+
+</script>
+
+</body>
+</html>
